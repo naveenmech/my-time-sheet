@@ -9,15 +9,21 @@ function Signup() {
           <left className="w-1/2 bg-[#c7d2fe] flex items-center justify-center p-[5rem] ">
             <form>
               {/* email */}
-              <p className="mt-8">Email</p>
+              <p className="mt-8">Email:</p>
               <input
                 type="email"
+                name="email"
                 placeholder="
               xxxx@gmail.com"
+                required
               />
+              {/* <label className="mt-8" for="email">
+                Email:
+              </label>
+              <input type="email" id="email" name="email" required /> */}
 
               {/* password */}
-              <p className="mt-2 ">Password</p>
+              <p className="mt-2 ">Password:</p>
               <input
                 type="password"
                 placeholder="
@@ -25,7 +31,7 @@ function Signup() {
               />
 
               {/* conform password */}
-              <p className="mt-2">Confirm Password</p>
+              <p className="mt-2">Confirm Password:</p>
               <input
                 type="password"
                 placeholder="
